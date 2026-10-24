@@ -45,7 +45,7 @@ export default function Cards() {
 }, [])
 
   return (
-    <div>
+    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '10px', justifyContent: 'center', alignItems: 'center' }}>
         {
         dataList.map((persona) => (
             <Card key={persona.nombre} {...persona} />
